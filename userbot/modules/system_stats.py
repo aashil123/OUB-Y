@@ -142,7 +142,7 @@ async def amireallyalive(alive):
       
         f"⚙` Telethon: v{version.__version__}` \n"
         f"🐍` Python: v{python_version()}` \n"
-        f"👨"` Owner:`  @FLAMEPOSEIDON \n"
+        f"👨` Owner:`  @FLAMEPOSEIDON \n"
         f"🤖` Userbot:`   [CHANDAN](https://github.com/FLAMEPOSEIDON/OUB-X)\n"               
         f"============================\n" )
         
