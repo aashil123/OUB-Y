@@ -140,7 +140,7 @@ async def amireallyalive(alive):
               f"============================\n" 
               f"⚙️ Telethon: v{version.__version__} \n" 
               f"🐍 Python: v{python_version()} \n"
-              f"😎 Owner: @FLAMEPOSEIDON \n"
+              f"🤪 owner: ` `{DEFAULTUSER}` \n"
               f"🤖 Userbot: [CHANDU](https://github.com/FLAMEPOSEIDON/OUB-Y)\n"
               f"============================\n" )
     if ALIVE_LOGO:
