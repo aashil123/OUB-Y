@@ -131,23 +131,21 @@ async def pipcheck(pip):
         await pip.edit("`Use .help pip to see an example`")
             
 
+
 @register(outgoing=True, pattern="^.alive$")
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
-   output = (`i am still alive bruh `\n"
-        f"🤴 PRO SUR: {DEFAULTUSER} \n"
-  f"============================\n"
-      
-        f"⚙` Telethon: v{version.__version__}` \n"
-        f"🐍` Python: v{python_version()}` \n"
-        f"👨` Owner:`  @FLAMEPOSEIDON \n"
-        f"🤖` Userbot:`   [CHANDAN](https://github.com/FLAMEPOSEIDON/OUB-X)\n"               
-        f"============================\n" )
-        
-   if ALIVE_LOGO:
-    logo = ALIVE_LOGO
-    logo = bot.send_file(alive.chat_id, logo, caption=output)
-    await alive.delete()
+    output = ("`i am still alive bruh `\n"
+             f"`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx `\n"
+             f"•  ⚙️ `Telethon    :` `V{version.__version__} `\n"
+             f"•  🐍 `Python      :` `V{python_version()} `\n"
+             f"•  👤 `User        :` `{DEFAULTUSER}` \n"
+             f"•  🤖 `Userbot     :` `[CHANDAN](https://github.com/FLAMEPOSEIDON/OUB-Y)`\n" 
+             f"`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx `\n")
+    if ALIVE_LOGO:
+        logo = ALIVE_LOGO
+        await bot.send_file(alive.chat_id, logo, caption=output)
+        await alive.delete()
     else:
         await alive.edit(output)
                    
