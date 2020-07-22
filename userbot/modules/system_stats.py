@@ -135,13 +135,14 @@ async def pipcheck(pip):
 @register(outgoing=True, pattern="^.alive$")
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
-    output = ("`i am still alive bruh `\n"
-             f"`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx `\n"
-             f"•  ⚙️ `Telethon    :` `V{version.__version__} `\n"
-             f"•  🐍 `Python      :` `V{python_version()} `\n"
-             f"•  👤 `User        :` `{DEFAULTUSER}` \n"
-             f"•  🤖 `Userbot     :` `[CHANDAN](https://github.com/FLAMEPOSEIDON/OUB-Y)`\n" 
-             f"`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx `\n")
+    output = (" HELLO SUR HOW MAY I HELP YOU \n"
+              f"🤴 MY MASTER: {DEFAULTUSER} \n"
+              f"============================\n" 
+              f"⚙️ Telethon: v{version.__version__} \n" 
+              f"🐍 Python: v{python_version()} \n"
+              f"😎 Owner: @FLAMEPOSEIDON \n"
+              f"🤖 Userbot: [CHANDU](https://github.com/FLAMEPOSEIDON/OUB-Y)\n"
+              f"============================\n" ))
     if ALIVE_LOGO:
         logo = ALIVE_LOGO
         await bot.send_file(alive.chat_id, logo, caption=output)
