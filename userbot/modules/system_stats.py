@@ -134,7 +134,7 @@ async def pipcheck(pip):
 @register(outgoing=True, pattern="^.alive$")
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
-   output = ("HELLO SUR I M ALIVE \n"
+   output = (`i am still alive bruh `\n"
         f"🤴 PRO SUR: {DEFAULTUSER} \n"
   f"============================\n"
       
