@@ -134,9 +134,7 @@ async def pipcheck(pip):
 @register(outgoing=True, pattern="^.alive$")
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
-    await alive.edit(
-   
-        "  HELLO SUR I M ALIVE \n"
+   output = ("HELLO SUR I M ALIVE \n"
         f"🤴 PRO SUR: {DEFAULTUSER} \n"
   f"============================\n"
       
@@ -147,6 +145,7 @@ async def amireallyalive(alive):
         f"============================\n" )
         
    if ALIVE_LOGO:
+    logo = ALIVE_LOGO
     logo = bot.send_file(alive.chat_id, logo, caption=output)
     await alive.delete()
     else:
