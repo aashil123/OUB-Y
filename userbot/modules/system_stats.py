@@ -142,7 +142,7 @@ async def amireallyalive(alive):
               f"🐍 Python: v{python_version()} \n"
               f"😎 Owner: @FLAMEPOSEIDON \n"
               f"🤖 Userbot: [CHANDU](https://github.com/FLAMEPOSEIDON/OUB-Y)\n"
-              f"============================\n" ))
+              f"============================\n" )
     if ALIVE_LOGO:
         logo = ALIVE_LOGO
         await bot.send_file(alive.chat_id, logo, caption=output)
